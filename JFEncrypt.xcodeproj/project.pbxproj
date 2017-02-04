@@ -13,6 +13,8 @@
 		F31B24731E456D01005E0B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31B24711E456D01005E0B59 /* Main.storyboard */; };
 		F31B24751E456D01005E0B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31B24741E456D01005E0B59 /* Assets.xcassets */; };
 		F31B24781E456D01005E0B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31B24761E456D01005E0B59 /* LaunchScreen.storyboard */; };
+		F31B24831E456D4F005E0B59 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F31B24811E456D4F005E0B59 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F31B24871E456D56005E0B59 /* JFDESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = F31B24861E456D56005E0B59 /* JFDESEncrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		F31B24741E456D01005E0B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F31B24771E456D01005E0B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F31B24791E456D01005E0B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31B24801E456D4F005E0B59 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		F31B24811E456D4F005E0B59 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		F31B24821E456D4F005E0B59 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		F31B24851E456D56005E0B59 /* JFDESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFDESEncrypt.h; sourceTree = "<group>"; };
+		F31B24861E456D56005E0B59 /* JFDESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFDESEncrypt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 		F31B24671E456D01005E0B59 /* JFEncrypt */ = {
 			isa = PBXGroup;
 			children = (
+				F31B24841E456D56005E0B59 /* DESEncrypt */,
+				F31B247F1E456D4F005E0B59 /* GMTBase64 */,
 				F31B246B1E456D01005E0B59 /* AppDelegate.h */,
 				F31B246C1E456D01005E0B59 /* AppDelegate.m */,
 				F31B246E1E456D01005E0B59 /* ViewController.h */,
@@ -77,6 +86,25 @@
 				F31B24691E456D01005E0B59 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F31B247F1E456D4F005E0B59 /* GMTBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				F31B24801E456D4F005E0B59 /* GTMBase64.h */,
+				F31B24811E456D4F005E0B59 /* GTMBase64.m */,
+				F31B24821E456D4F005E0B59 /* GTMDefines.h */,
+			);
+			path = GMTBase64;
+			sourceTree = "<group>";
+		};
+		F31B24841E456D56005E0B59 /* DESEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				F31B24851E456D56005E0B59 /* JFDESEncrypt.h */,
+				F31B24861E456D56005E0B59 /* JFDESEncrypt.m */,
+			);
+			path = DESEncrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +181,8 @@
 				F31B24701E456D01005E0B59 /* ViewController.m in Sources */,
 				F31B246D1E456D01005E0B59 /* AppDelegate.m in Sources */,
 				F31B246A1E456D01005E0B59 /* main.m in Sources */,
+				F31B24871E456D56005E0B59 /* JFDESEncrypt.m in Sources */,
+				F31B24831E456D4F005E0B59 /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
